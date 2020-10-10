@@ -8,12 +8,14 @@ Project was structured by [Feature Driven Development](https://www.notion.so/Fea
     - **shared resources** should not depend from **each other**
 - all **needed** resources (store / async effects / components) - locate in `features/` dir
 - all **common used**  resources (components / helpers / fixtures) - locate in `shared/` dir
-- about **premature optimization**
+- about **pre-optimization**
     - not need to strive to optimize modules for *changing*
         - because of we can't predict future
     - instead of this - *it's desirable* to optimize their for *deleting*
         - because of it's only one thing we know - that all code transform to chaos =)
         - and it's easier to refactor **totally (clean up)** only few modules, instead of one app totally
+
+> [more details](https://www.notion.so/Summary-YouTube-Feature-Driven-Arhitecture-b8609fd4452b41f499703c841e56b8e9#63dfc5b35e534147b8296e1aa915ad2b)
 
 ## Folders
 ```markdown
@@ -34,7 +36,6 @@ Project was structured by [Feature Driven Development](https://www.notion.so/Fea
 
 ## Feature
 
-**Feature - a self-contained user facing reusable complex building block
 **Feature** - a <u>self-contained</u>, <u>user-facing</u>, (maybe) <u>reusable</u> between pages and <u>complex logic</u> contained building block (module).
 
 > More details - [here](https://www.notion.so/Summary-YouTube-Feature-Driven-Arhitecture-b8609fd4452b41f499703c841e56b8e9#18cb1679b2754951ae92627d371d1a88)
