@@ -34,7 +34,7 @@ const TasksList = () => {
                     {loading && <Spin className="loading--overlay" />}
                     <ul>
                         {query?.map((task) => (
-                            <li><TaskItem {...task} /></li>
+                            <li key={task?.id}><TaskItem {...task} /></li>
                         ))}
                         {/* FIXME: yet (!query && !loading)  */}
                         {query?.length === 0 && (

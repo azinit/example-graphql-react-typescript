@@ -15,7 +15,8 @@ const TaskDetails = (props: Props) => {
 
     if (loading) return <Spin />;
     if (error) return <Alert message={error.message || String(error)} type="error" showIcon />;
-    if (!todo) return <>Not Found</>;
+    // FIXME: more strict null case
+    if (!todo || !todo?.id) return <Alert message="Task not found" type="error" showIcon />;
     return <TaskCard {...todo} />;
 }
 
