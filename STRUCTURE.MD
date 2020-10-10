@@ -68,7 +68,7 @@ function YourComponent(props: Props) {
 }
 ```
 
-> codegen by `@graphql-codegen`, more details in [codegen.yml][/codegen.yml]
+> codegen by `@graphql-codegen`, more details in [codegen.yml](/codegen.yml)
 
 #### Assets
 Perfectly, all static *assets* files should locate on related components level (**on using level**).

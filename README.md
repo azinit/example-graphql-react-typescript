@@ -4,6 +4,8 @@ React app example with data fetching by graphql
 
 - api source: https://graphqlzero.almansi.me/
 
+![demo.gif](./demo.gif)
+
 ## Tech stack
 - **UI**: `react`, `antd`, `classnames`
 - **Lang**: `typescript` (3.7+)
@@ -43,8 +45,8 @@ npm run lint    (тесты линтера)
 
 ## Structure
 
-- [STRUCTURE.MD](/STRUCTURE.MD)
+- [STRUCTURE.MD](/STRUCTURE.md)
 
 ## Recommendations
 
-- [RECOMMENDATIONS.MD](/RECOMMENDATIONS.MD)
+- [RECOMMENDATIONS.MD](/RECOMMENDATIONS.md)
