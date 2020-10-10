@@ -50,3 +50,8 @@ npm run lint    (тесты линтера)
 ## Recommendations
 
 - [RECOMMENDATIONS.MD](/RECOMMENDATIONS.md)
+
+## FAQ
+
+- Q: ~~Show me~~ code!
+- A: [pages/tasks-list](https://github.com/martis-git/example-graphql-react-typescript/blob/dev/src/pages/tasks-list/index.tsx)
