@@ -10,7 +10,7 @@ type Props = RouteComponentProps<{
 
 const TaskDetails = (props: Props) => {
     const { id } = props.match.params;
-    const { data, loading, error } = useFetch<Task>(`todos/${id}`);
+    const { data, loading, error } = useFetch<any>(`todos/${id}`);
 
     if (loading) return <Spin />;
     if (error) return <Alert message={error.message || String(error)} type="error" showIcon />;

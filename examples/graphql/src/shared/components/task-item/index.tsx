@@ -10,7 +10,7 @@ type Props = import("models").Todo;
 // TODO: as feature
 const TaskItem = (props: Props) => {
     const { completed, title, user, id } = props;
-    const { data: author } = useFetch<User>(`users/${user?.id}`);
+    const { data: author } = useFetch<import("models").User>(`users/${user?.id}`);
 
     return (
         <Card className={cn("task-item", { completed })}>

@@ -5,7 +5,7 @@ import { UserOutlined, HomeOutlined } from "@ant-design/icons";
 import { useFetch } from "shared/hooks";
 import "./index.scss";
 
-type Props = Task;
+type Props = import("models").Todo;
 
 const ICON_STYLE = { color: '#08c' };
 
@@ -16,8 +16,8 @@ const getTaskStatus = (completed: boolean) => {
 
 // TODO: as feature
 const TaskCard = (props: Props) => {
-    const { completed, id, title, userId } = props;
-    const { data: author } = useFetch<User>(`users/${userId}`);
+    const { completed, title, user } = props;
+    const { data: author } = useFetch<import("models").User>(`users/${user?.id}`);
 
     return (
         <Card

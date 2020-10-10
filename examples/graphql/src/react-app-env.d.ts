@@ -1,2 +1,3 @@
 /// <reference types="react-scripts" />
-/// <reference types="./models" />
+// FIXME: import model.ts with global declaring?
+// /// <reference types="./models" />
