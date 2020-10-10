@@ -1,5 +1,5 @@
 // FIXME: specify imported modules (need only some utils-classes)
-@import '~bootstrap/dist/css/bootstrap.css';
+// FIXME: remove later @import '~bootstrap/scss/_utilities.scss';
 
 // vars
 .app {
@@ -47,6 +47,15 @@ body,
   }
   .text-muted {
     color: gray;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .position-relative {
+    position: relative;
+  }
+  .pt-1 {
+    padding-top: 10px;
   }
   .loading--overlay {
     padding-top: 10px;

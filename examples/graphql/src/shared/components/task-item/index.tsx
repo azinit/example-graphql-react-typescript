@@ -12,8 +12,14 @@ const TaskItem = (props: Props) => {
 
     return (
         <Card className={cn("task-item", { completed })}>
-            <a className="task-item__title" href={`/${id}`}>{title}</a>
-            <span className="task-item__author" >
+            <a
+                className="task-item__title"
+                href={`/${id}`}
+                title={`Author: ${user.username}\nTitle: ${title}\nCompleted: ${completed}`}
+            >
+                {title}
+            </a>
+            <span className="task-item__author">
                 <UserOutlined />
                 {user?.username}
             </span>
