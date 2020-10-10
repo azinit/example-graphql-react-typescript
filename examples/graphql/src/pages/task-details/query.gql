@@ -2,9 +2,13 @@ query Todo($id: ID!) {
   todo(id: $id) {
     id
     title
+    completed
     user {
-      id
-      name
+      username
+      email
+      company {
+        name
+      }
     }
   }
 }

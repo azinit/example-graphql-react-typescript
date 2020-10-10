@@ -20,4 +20,9 @@
             color: rgba(cornflowerblue, 0.8);
         }
     }
+
+    &__author {
+        display: flex;
+        align-items: center;
+    }
 }

@@ -3,9 +3,9 @@ query Todos {
     data {
       id
       title
+      completed
       user {
-        id
-        name
+        username
       }
     }
   }

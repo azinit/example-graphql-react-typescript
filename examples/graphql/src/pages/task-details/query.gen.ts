@@ -8,7 +8,7 @@ export type TodoQueryVariables = Types.Exact<{
 }>;
 
 
-export type TodoQuery = { readonly todo?: Types.Maybe<{ readonly id?: Types.Maybe<string>, readonly title?: Types.Maybe<string>, readonly user?: Types.Maybe<{ readonly id?: Types.Maybe<string>, readonly name?: Types.Maybe<string> }> }> };
+export type TodoQuery = { readonly todo?: Types.Maybe<{ readonly id?: Types.Maybe<string>, readonly title?: Types.Maybe<string>, readonly completed?: Types.Maybe<boolean>, readonly user?: Types.Maybe<{ readonly username?: Types.Maybe<string>, readonly email?: Types.Maybe<string>, readonly company?: Types.Maybe<{ readonly name?: Types.Maybe<string> }> }> }> };
 
 
 export const TodoDocument = gql`
@@ -16,9 +16,13 @@ export const TodoDocument = gql`
   todo(id: $id) {
     id
     title
+    completed
     user {
-      id
-      name
+      username
+      email
+      company {
+        name
+      }
     }
   }
 }

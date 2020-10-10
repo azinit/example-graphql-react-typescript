@@ -2,7 +2,6 @@ import React from 'react';
 import cn from "classnames";
 import { Card, Steps, Typography, Divider } from "antd";
 import { UserOutlined, HomeOutlined } from "@ant-design/icons";
-import { useFetch } from "shared/hooks";
 import "./index.scss";
 
 type Props = import("models").Todo;
@@ -20,7 +19,6 @@ const getTaskStatus = (completed: boolean) => {
 // TODO: as feature
 const TaskCard = (props: Props) => {
     const { completed, title, user } = props;
-    const { data: author } = useFetch<import("models").User>(`users/${user?.id}`);
 
     return (
         <Card
@@ -34,9 +32,9 @@ const TaskCard = (props: Props) => {
                 <div className="task-card__author">
                     <Typography.Title level={5}>Author</Typography.Title>
                     <span className="task-card__author" >
-                        <UserOutlined style={ICON_STYLE} /> {author?.username} {`<${author?.email}>`}
+                        <UserOutlined style={ICON_STYLE} /> {user?.username} {`<${user?.email}>`}
                         <br />
-                        <HomeOutlined style={ICON_STYLE} /> {author?.company.name}
+                        <HomeOutlined style={ICON_STYLE} /> {user?.company.name}
                     </span>
                 </div>
                 <Divider />

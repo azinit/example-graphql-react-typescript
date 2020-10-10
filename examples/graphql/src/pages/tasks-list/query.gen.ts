@@ -6,7 +6,7 @@ import * as Apollo from '@apollo/client';
 export type TodosQueryVariables = Types.Exact<{ [key: string]: never; }>;
 
 
-export type TodosQuery = { readonly todos?: Types.Maybe<{ readonly data?: Types.Maybe<ReadonlyArray<Types.Maybe<{ readonly id?: Types.Maybe<string>, readonly title?: Types.Maybe<string>, readonly user?: Types.Maybe<{ readonly id?: Types.Maybe<string>, readonly name?: Types.Maybe<string> }> }>>> }> };
+export type TodosQuery = { readonly todos?: Types.Maybe<{ readonly data?: Types.Maybe<ReadonlyArray<Types.Maybe<{ readonly id?: Types.Maybe<string>, readonly title?: Types.Maybe<string>, readonly completed?: Types.Maybe<boolean>, readonly user?: Types.Maybe<{ readonly username?: Types.Maybe<string> }> }>>> }> };
 
 
 export const TodosDocument = gql`
@@ -15,9 +15,9 @@ export const TodosDocument = gql`
     data {
       id
       title
+      completed
       user {
-        id
-        name
+        username
       }
     }
   }
