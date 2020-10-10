@@ -24,3 +24,7 @@ yarn-error.log*
 
 # ide
 /.vscode
+
+# deps lock
+yarn.lock
+package-lock.json
