@@ -9,6 +9,9 @@ type Props = import("models").Todo;
 
 const ICON_STYLE = { color: '#08c' };
 
+/**
+ * @remark Вынесено в отдельную функцию, т.к. в дальнейшем логика может стать сложнее
+ */
 const getTaskStatus = (completed: boolean) => {
     if (completed) return 1;
     return 0;
