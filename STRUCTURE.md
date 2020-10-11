@@ -2,7 +2,7 @@
 Project was structured by [Feature Driven Development](https://www.notion.so/Feature-Driven-Development-dfe306d664ae4780bcf999ccdd15e532).
 
 ## Principles
-- low decoupling
+- low coupling
     - **feature** should not depend from **other features**
     - **page** should not depend from **other pages**
     - **shared resources** should not depend from **each other**
