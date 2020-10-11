@@ -26,6 +26,14 @@ npm i
 npm run start
 ```
 
+### Generate api
+```bash
+# update local api once
+npm run api:gen
+# update by changes (watch)
+npm run api:gen--watch
+```
+
 ### (IN PLAN) Run linter
 ```bash
 npm run lint:fix
