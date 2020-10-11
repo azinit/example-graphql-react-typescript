@@ -2,7 +2,7 @@
 
 React app example with data fetching by graphql
 
-> Actual for October 2020 implementation
+> Actual for 2020 implementation
 
 - api source: https://graphqlzero.almansi.me/
 
