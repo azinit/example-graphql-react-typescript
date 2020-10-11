@@ -2,6 +2,8 @@
 
 React app example with data fetching by graphql
 
+> Actual for October 2020 implementation
+
 - api source: https://graphqlzero.almansi.me/
 
 ![demo.gif](./demo.gif)
