@@ -76,7 +76,7 @@ Perfectly, all static *assets* files should locate on related components level (
 
 > Because of - generally - there is own **unique** icons collection for every UI area
 
-If you its **very necesary and matter** for you - to have common-used icons, then locate their in `shared` folder (in this case - you can import them from any point of app)
+If its **very necesary and matter** for you - to have common-used icons, then locate their in `shared` folder (in this case - you can import them from any point of app)
 
 ```markdown
 └── shared/
