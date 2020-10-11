@@ -42,11 +42,11 @@ npm run lint:fix
 ### (IN PLAN) Run tests
 ```bash
 # Run all tests
-npm run test    (запуск всех тестов)
+npm run test
 # Run unit tests
-npm run unit    (unit тесты)
+npm run unit
 # Run lint tests
-npm run lint    (тесты линтера)
+npm run lint
 ```
 
 ---
