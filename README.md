@@ -10,8 +10,8 @@ React app example with data fetching by graphql
 
 ## Tech stack
 - **UI**: `react`, `antd`, `classnames`
-- **Lang**: `typescript` (3.7+)
-- **Fetching**: `graphql`, `apollo-client`
+- **Lang**: `typescript (3.7+)`
+- **Fetching**: `graphql`, `apollo-client (3+)`
    - **API Codegen**: `graphql-codegen`
 - **Routing**: `react-router`
 
