@@ -71,7 +71,7 @@ function YourComponent(props: Props) {
 
 > codegen by `@graphql-codegen`, more details in [codegen.yml](/codegen.yml)
 
-#### Assets
+## Assets
 Perfectly, all static *assets* files should locate on related components level (**on using level**).
 
 > Because of - generally - there is own **unique** icons collection for every UI area
@@ -83,7 +83,7 @@ If its **very necesary and matter** for you - to have common-used icons, then lo
       ├── assets/
 ```
 
-#### Shared
+## Shared
 There is public API declaration file (`index.ts`) in all shared modules (with module's API for other modules)
 
 **Recommends to get all needed submodules namely with its**
